@@ -1,0 +1,87 @@
+:root {
+  --bs-primary: #0d1b2a;   /* sötét kékesszürke */
+  --bs-secondary: #d90429; /* élénk vörös akcentus */
+  --bs-success: #2a9d8f;   /* türkiz */
+  --bs-light: #f8f9fa;     /* világos háttér */
+  --bs-dark: #343a40;      /* sötét szöveg */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: var(--bs-primary) !important;
+  color: var(--bs-light) !important;
+  text-align: center;
+}
+header {
+  padding: 1rem;
+}
+footer {
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.navbar {
+  background-color: var(--bs-primary) !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--bs-light) !important;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--bs-secondary) !important;
+}
+
+.btn-primary {
+  background-color: var(--bs-secondary) !important;
+  border-color: var(--bs-secondary) !important;
+}
+.btn-primary:hover {
+  background-color: #b90429 !important;
+  border-color: #b90429 !important;
+}
+
+.card {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.card .card-title,
+.card .card-text {
+  color: var(--bs-dark);
+}
+.card-img-top {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+main.container, .container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5) !important; /* 50% fekete háttér, felülírva mindent */
+    border-radius: 50% !important;
+    width: 3rem !important;
+    height: 3rem !important;
+    background-size: 60% 60% !important;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2) !important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background: none; /* hogy ne legyen plusz sáv */
+}
